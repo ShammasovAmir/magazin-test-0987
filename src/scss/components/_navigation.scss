@@ -1,0 +1,35 @@
+.nav {
+  width: 100vw;
+
+  &__top {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__top-links {
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    align-items: center;
+  }
+
+  &__top-link {
+    display: block;
+    padding-left: 40px;
+
+    a {
+      text-decoration: none;
+      color: #282828;
+      font-weight: 400px;
+    }
+  }
+
+  &__top-socials {
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
