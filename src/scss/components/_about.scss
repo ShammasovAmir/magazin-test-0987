@@ -1,0 +1,32 @@
+.about {
+  display: block;
+  margin-bottom: 50px;
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  &__text-container {
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 85%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
