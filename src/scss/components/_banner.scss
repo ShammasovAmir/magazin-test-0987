@@ -1,0 +1,27 @@
+.banner {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 44px;
+
+  &__swiper {
+    height: 356px;
+    position: relative;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets {
+    top: calc(356px + 16px) !important;
+  }
+
+  .swiper-pagination-bullet {
+    height: 12px !important;
+    width: 12px !important;
+    opacity: 0.4000000059604645 !important;
+    background: rgba(40, 40, 40, 0.5) !important;
+    margin: 0 9px !important;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #2a5cf6 !important;
+    opacity: 1 !important;
+  }
+}
