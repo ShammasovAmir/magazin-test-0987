@@ -16,3 +16,9 @@ const bannerSwiper = new Swiper(".banner__swiper", {
     clickable: true,
   },
 })
+
+const advantagesSwiper = new Swiper(".advantages__swiper", {
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 24,
+})
