@@ -146,10 +146,12 @@
   }
 
   &__arrow-up-wrapper {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     right: 0;
     bottom: 48px;
+    z-index: 40;
+    pointer-events: none;
   }
 
   &__arrow-up-container {
@@ -165,6 +167,6 @@
     background-image: url("../assets/icons/arrow-up.svg");
     background-position: center;
     filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.2));
-    z-index: 40 !important;
+    pointer-events: all;
   }
 }

@@ -14,6 +14,21 @@
       linear-gradient(35deg, #c2fff8 0%, #fff 100%);
     height: 262px;
     position: relative;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+  }
+
+  &__card-imgs {
+    max-height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__card-img {
+    object-fit: contain;
   }
 
   &__slide-text-container {
