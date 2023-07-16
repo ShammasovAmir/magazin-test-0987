@@ -19,15 +19,40 @@ const bannerSwiper = new Swiper(".banner__swiper", {
 })
 
 const advantagesSwiper = new Swiper(".advantages__swiper", {
-  loop: true,
-  slidesPerView: 5,
-  spaceBetween: 24,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    1140: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+
+    910: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+
+    537: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 })
 
 const productsSwiper = new Swiper(".products__swiper", {
   // loop: true,
-  slidesPerView: 4,
-  spaceBetween: 24,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    1168: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    762: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
