@@ -39,6 +39,10 @@
     background: #eee;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media (max-width: 767px) {
+      padding-bottom: 28px;
+    }
   }
 
   &__list-title {
@@ -169,6 +173,12 @@
     width: 20px;
   }
 
+  &__social-icons {
+    @media (max-width: 767px) {
+      padding-bottom: 4px;
+    }
+  }
+
   &__social-icon {
     margin-right: 8px;
     cursor: pointer;
@@ -197,6 +207,19 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.36px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      transition: all 0.2s ease-out;
+    }
+
+    &--active {
+      img {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__accordion-panel {
