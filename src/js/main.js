@@ -1,9 +1,9 @@
-import Swiper from "swiper"
-import Pagination from "swiper/modules/pagination.mjs"
-import Autoplay from "swiper/modules/autoplay.mjs"
-import Navigation from "swiper/modules/navigation.mjs"
+import Swiper from "swiper";
+import Pagination from "swiper/modules/pagination.mjs";
+import Autoplay from "swiper/modules/autoplay.mjs";
+import Navigation from "swiper/modules/navigation.mjs";
 
-Swiper.use([Pagination, Autoplay, Navigation])
+Swiper.use([Pagination, Autoplay, Navigation]);
 
 const bannerSwiper = new Swiper(".banner__swiper", {
   loop: true,
@@ -16,7 +16,7 @@ const bannerSwiper = new Swiper(".banner__swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-})
+});
 
 const advantagesSwiper = new Swiper(".advantages__swiper", {
   slidesPerView: 2,
@@ -37,7 +37,7 @@ const advantagesSwiper = new Swiper(".advantages__swiper", {
       spaceBetween: 20,
     },
   },
-})
+});
 
 const productsSwiper = new Swiper(".products__swiper", {
   // loop: true,
@@ -57,4 +57,20 @@ const productsSwiper = new Swiper(".products__swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+});
+
+/*
+ * Accordion
+ */
+
+const accordions = document.querySelectorAll(".footer__accordion-title");
+
+accordions.forEach((acc) => {
+  acc.addEventListener("click", function () {
+    this.classList.toggle("footer__accordion-title--active");
+    let panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) panel.style.maxHeight = null;
+    else panel.style.maxHeight = panel.scrollHeight + "px";
+  });
+});
